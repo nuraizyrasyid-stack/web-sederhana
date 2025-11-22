@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    
+    <h1>Formulir  Umpan Balik</h1>
+    <p>Kritik, Saran, dan Masukan</p>
+  </header>
+
+  <nav class="index-nav">
+    <a href="index.html">Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="feedback.html" class="active">Feedback</a>
+  </nav>
+
+  <main class="main-feedback">
+    <section class="form-card-feedback">
+      <h3>📋 Formulir Kontak & Saran</h3>
+      <p>Berikan masukan terbaik Anda untuk pengembangan website profil ini. Semua input bersifat wajib kecuali nama.</p>
+      <form>
+        <label for="nama">Nama Anda (Opsional):</label>
+        <input type="text" id="nama" placeholder="Tulis nama Anda" />
+
+        <label for="email">Email Anda:</label>
+        <input type="email" id="email" placeholder="nama@email.com" required />
+
+        <label for="rating">Rating Kepuasan Website (Skala 1–10):</label>
+        <input type="number" id="rating" min="1" max="10" placeholder="Masukkan angka 1 hingga 10" required />
+
+        <label>Rekomendasi Website Ini?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="rekom" /> Ya, Sangat</label>
+          <label><input type="radio" name="rekom" /> Mungkin Saja</label>
+          <label><input type="radio" name="rekom" /> Tidak</label>
+        </div>
+
+        <label>Topik yang paling menarik:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> Biodata</label>
+          <label><input type="checkbox" /> Jadwal</label>
+          <label><input type="checkbox" /> Galeri</label>
+        </div>
+
+        <label for="bidang">Saran Pengembangan di Bidang:</label>
+        <select id="bidang">
+          <option>-- Pilih Bidang --</option>
+          <option>Desain Web</option>
+          <option>Konten</option>
+          <option>Interaktivitas</option>
+          <option>Kinerja</option>
+        </select>
+
+        <label for="pesan">Pesan/Saran Lengkap:</label>
+        <textarea id="pesan" rows="4" placeholder="Tulis pesan dan saran Anda di sini..."></textarea>
+
+        <div class="button-group">
+          <button type="reset" class="btn-reset">Atur Ulang</button>
+          <button type="submit" class="btn-submit">Kirim Feedback</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
