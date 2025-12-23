@@ -406,6 +406,16 @@ form textarea:focus {
   margin-bottom: 15px;
   border-left: 4px solid #fbbf24;
   padding-left: 8px;
+ 
+  
+}
+
+.ubah-font{
+ color: blue;
+ font-family: 'Patrick Hand', cursive;
+ font-size: 20px; /* sesuaikan ukuran */
+
+   
 }
 
 /* GALERI GRID */
